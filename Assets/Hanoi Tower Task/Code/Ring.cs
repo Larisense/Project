@@ -1,18 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Ring : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int ringID; // 圆环的编号
 
-    // Update is called once per frame
-    void Update()
+    // 移动到指定坐标
+    public void MoveToPosition(Vector3 newPosition)
     {
-        
+        transform.position = newPosition;
     }
 }
